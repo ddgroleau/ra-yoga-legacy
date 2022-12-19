@@ -16,7 +16,6 @@ FROM node:alpine AS production
 ARG X_TAG
 WORKDIR /opt/app
 
-COPY --from=build /app/next.config.js ./
 COPY --from=build /app/public ./public
 COPY --from=build /app/.next ./.next
 COPY --from=build /app/node_modules ./node_modules
