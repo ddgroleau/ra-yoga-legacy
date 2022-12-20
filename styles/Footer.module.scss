@@ -1,0 +1,148 @@
+@import './colors.scss';
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.topContainer {
+    display: flex;
+    background-color: $primary;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: $gap-m;
+}
+
+.bottom {
+    background-color: $secondary;
+    color: $accent-light;
+    display: flex;
+    justify-content: center;
+}
+
+.bottomLinks {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 95%;
+    padding: $gap-s;
+    gap: $gap-m;
+    small, a {
+        color: white;
+        font-size: small;
+    }
+}
+
+.logo {
+    display: flex;
+    background-color: $accent-light;
+    border: none;
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    gap: $gap-xl;
+    flex-flow: row wrap;
+    padding: $gap-m;
+    a:hover {
+        text-decoration: underline;
+        transition: .4s;
+    }
+}
+
+.navCategory {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-s;
+}
+
+.navParent {
+    padding-bottom: $gap-s;
+    a {
+        font-weight: 600;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $accent-light;
+    }
+}
+
+.navChild {
+    a {
+        font-weight: 200;
+        text-decoration: none;
+        color: $accent-light;
+    }
+}
+
+.social {
+    display: flex;
+    width: 90%;
+    gap: $gap-m;
+    margin-bottom: $gap-m;
+}
+
+.socialRow {
+    display: flex;
+    gap: $gap-m;
+    justify-content: center;
+    img {
+        opacity: .6;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+    img:hover {
+        opacity: 1;
+        transition: .4s;
+    }
+}
+
+.complianceLinks {
+    display: flex;
+    flex-flow: row wrap;
+    gap: $gap-m;
+}
+
+@media (min-width: 768px) {
+    .topContainer {
+        justify-content: center;
+    }
+    .top {
+        flex-direction: row;
+        width: 95%;
+        justify-content: space-evenly;
+    }
+    .nav {
+        flex-flow: row nowrap;
+        width: fit-content;
+        justify-content: flex-end;
+        height: 100%;
+    }
+    .social {
+        flex-direction: column;
+        align-items: flex-end;
+        width: fit-content;
+        margin-bottom: 0;
+        margin-left: auto;
+        padding-block: $gap-m;
+    }
+    .logo {
+        width: fit-content;
+        margin-left: auto;
+    }
+}
+
+@media (min-width: 1000px) {
+    .social, .socialRow {
+        gap: $gap-m;
+    }
+}
