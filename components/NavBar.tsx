@@ -69,6 +69,14 @@ const Navbar = ({title,description}:NavbarProps) => {
                         <span className={router.pathname === "/contact" ? styles.active : ""}>
                             <Link href={"/contact"} >Contact</Link>
                         </span>
+                        <span className={styles.signUp}>
+                            <Link 
+                                href='https://www.tickettailor.com/events/rachelaronneyoga/768704#' 
+                                target={"_blank"}
+                            >
+                                Sign Up
+                            </Link>
+                        </span>
                     </section>
                     <div className={styles.navLogo}>
                         <Link href={"/"}>

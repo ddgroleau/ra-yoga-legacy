@@ -15,6 +15,7 @@ const ClassesHeroText = () => {
                     scheme={'light'} 
                     href="https://www.tickettailor.com/events/rachelaronneyoga/768704#" 
                     innerText='Sign Up' 
+                    target={"_blank"}
                 />
             </div>
         </div>
