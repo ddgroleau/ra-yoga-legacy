@@ -14,7 +14,7 @@ const AboutHeroText = () => {
             <p>
                 I began practicing yoga asana in my first week of college and knew this was a 
                 practice that went deep for me. I knew I needed to deepen my practice and 
-                shipped off to Costa Rica for my 200hr YTT 2 months after I graduated. 
+                shipped off to Hari Om Yoga School in Costa Rica for my 200hr YTT 2 months after I graduated. 
                 Ever since, I have developed an incredible sense of self, tradition, and an 
                 indescribable love of this practice that I am honored to be able to share. 
                 The journey into the self is not an easy ride, but it’s one that I am blessed to experience. 
