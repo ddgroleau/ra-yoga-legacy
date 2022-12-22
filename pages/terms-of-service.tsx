@@ -17,7 +17,7 @@ and proudly serves businesses of any size across MA, CT, NH, VT, RI and ME.`}
                 display:"flex", justifyContent:"center", width: "100%"
             }}>
                 <div style={{
-                    display:"flex", flexDirection: "column", maxWidth: "90%", paddingBlock:"5rem", lineHeight: "1.5rem", wordBreak: "break-word"
+                    display:"flex", flexDirection: "column", maxWidth: "90%", paddingBlock:"0 5rem", lineHeight: "1.5rem", wordBreak: "break-word"
                 }}>
                     <h1>TERMS OF SERVICE</h1>
                     <p><em>Last updated December 20th, 2022</em></p>

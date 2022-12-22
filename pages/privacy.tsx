@@ -12,7 +12,7 @@ const Privacy = () => {
                 display:"flex", justifyContent:"center", width: "100%"
             }}>
                 <div style={{
-                    display:"flex", flexDirection: "column", maxWidth: "90%", paddingBlock:"5rem", 
+                    display:"flex", flexDirection: "column", maxWidth: "90%", paddingBlock:"0 5rem", 
                     lineHeight: "1.5rem", wordBreak: "break-word"
                 }}>
                     <h1>PRIVACY NOTICE</h1>

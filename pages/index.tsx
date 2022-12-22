@@ -1,6 +1,4 @@
-import Head from 'next/head';
-
-import styles from '@/pages/index.module.scss';
+import styles from '../styles/index.module.scss';
 import Layout from '@/components/Layout';
 import Hero from '@/components/Hero';
 import HomeHeroText from '@/components/HomeHeroText';

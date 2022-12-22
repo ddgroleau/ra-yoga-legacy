@@ -37,6 +37,7 @@
     gap: $gap-xl;
     z-index: 1;
     transition: height 0.4s, opacity 0.4s;
+    border-bottom: solid transparent 1px;
     a {
         text-decoration: none;
         white-space: nowrap;

@@ -5,6 +5,9 @@
   height: 100%;
   display: flex;
   justify-content: center;
+  & > section > div:nth-child(1) {
+    margin-block: $gap-m;
+  }
 }
 
 .promoContainer {
@@ -17,5 +20,9 @@
 @media (min-width: 768px) {
   .heroContainer {
     margin-top: $gap-m;
+    max-width: 95%;
+    & > section > div:nth-child(1) {
+      margin-block: 0;
+    }
   }
 }

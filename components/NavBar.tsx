@@ -30,7 +30,7 @@ const Navbar = ({title,description}:NavbarProps) => {
                 <meta property="og:title" content={title} />
                 <meta property="og:site_name" content="Rachel Aronne Yoga" />
                 <meta property="og:description" content={description} />
-                <meta property="og:image" content={"/og-image.png"} />
+                <meta property="og:image" content={"/rachel-mudra-side.webp"} />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             {/* <Script 

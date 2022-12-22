@@ -8,7 +8,8 @@ const HomeImage = () => {
             backgroundRepeat:"no-repeat",
             backgroundSize:"cover",
             width:"100%",
-            height:"100%",
+            height: "45vh",
+            maxHeight: "500px"
         }}></div>
     );
 };
