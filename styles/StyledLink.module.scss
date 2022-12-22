@@ -1,0 +1,33 @@
+@import './colors.scss';
+
+
+@mixin container($borderColor,$textColor) {
+    border: solid $borderColor 2px;
+    max-width: fit-content;
+    max-height: min-content;
+    padding: $gap-s $gap-m;
+    color: $textColor;
+    cursor: pointer;
+}
+
+@mixin containerHover($bgColor,$textColor) {
+    background-color: $bgColor;
+    color: $textColor;
+    transition: .4s;
+}
+
+.light {
+    @include container($primary, $text-dark);
+}
+
+.light:hover {
+    @include containerHover($primary, $text-light);
+}
+
+.dark {
+    @include container($accent-light, $text-light);
+}
+
+.dark:hover {
+    @include containerHover($accent-light, $text-dark);
+}

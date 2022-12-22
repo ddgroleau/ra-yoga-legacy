@@ -2,6 +2,10 @@ import Head from 'next/head';
 
 import styles from '@/pages/index.module.scss';
 import Layout from '@/components/Layout';
+import Hero from '@/components/Hero';
+import HomeHeroText from '@/components/HomeHeroText';
+import HomeImage from '@/components/HomeImage';
+import ClassesPromo from '@/components/ClassesPromo';
 
 const seoDescription = `
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
@@ -10,7 +14,12 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 const Home = () => {
     return (
         <Layout title={'Rachel Aronne Yoga'} description={seoDescription}>
-            <span>Rachel</span>
+            <section className={styles.heroContainer}>
+                <Hero textComponent={<HomeHeroText/>} imgComponent={<HomeImage/>}/>
+            </section>
+            <section className={styles.promoContainer}>
+                <ClassesPromo />
+            </section>
         </Layout>
     );
 };

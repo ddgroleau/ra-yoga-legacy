@@ -11,7 +11,11 @@ const Layout = ({ title,description,children }:LayoutProps) => {
     return (
         <>
             <Navbar title={title} description={description}/>
-            <main>{children}</main>
+            <main>
+                <div>
+                    {children}
+                </div>
+            </main>
             <Footer />
         </>
     );

@@ -1,0 +1,20 @@
+@import './colors.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    h1, h2 {
+        margin-block: $gap-m;
+        text-align: center;
+    }
+    h2 {
+        font-weight: 400;
+    }
+}
+
+.linkContainer {
+    margin-block: $gap-m;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
