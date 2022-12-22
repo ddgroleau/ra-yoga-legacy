@@ -8,10 +8,7 @@ const TermsOfService = () => {
     return (
         <Layout 
             title="Terms Of Service | Rachel Aronne Yoga" 
-            description={`New England's leading web design and development company. 
-We build websites, applications, and custom tools for business automations and analytics.
-ThoughSpring Creative LLC. is a veteran-owned software development company located in Portland, ME, 
-and proudly serves businesses of any size across MA, CT, NH, VT, RI and ME.`}
+            description={``}
         >
             <section style={{
                 display:"flex", justifyContent:"center", width: "100%"

@@ -8,6 +8,7 @@
     padding: $gap-s $gap-m;
     color: $textColor;
     cursor: pointer;
+    border-radius: 6px;
 }
 
 @mixin containerHover($bgColor,$textColor) {

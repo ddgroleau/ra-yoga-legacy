@@ -1,14 +1,22 @@
+import ClassesHeroText from '@/components/ClassesHeroText';
+import ClassesImage from '@/components/ClassesImage';
+import ClassesPromo from '@/components/ClassesPromo';
+import Hero from '@/components/Hero';
 import Layout from '@/components/Layout';
 import React from 'react';
+import styles from '../styles/classes.module.scss';
 
-const seoDescription = `
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`;
+const seoDescription = ``;
 
 const Classes = () => {
     return (
         <Layout title={'Rachel Aronne Yoga'} description={seoDescription}>
-            <div>Classes</div>  
+            <div className={styles.heroContainer}>
+                <Hero textComponent={<ClassesHeroText/>} imgComponent={<ClassesImage/>}/>
+            </div>
+            <section className={styles.promoContainer}>
+                <ClassesPromo />
+            </section>
         </Layout>
     );
 };

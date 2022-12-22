@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutHeroText = () => {
     return (
-        <div style={{display:'flex', flexDirection:'column', marginRight:'1rem', width: '90%',minWidth: '50%'}}>
+        <div style={{display:'flex', flexDirection:'column', marginRight:'1rem', width: '85%',minWidth: '50%'}}>
             <h1 style={{marginBlock: '1rem'}}>About Rachel</h1>
             <h2 style={{marginBlock: '1rem'}}>Thank You for Being Here</h2>
             <p>Hi! I’m Rachel; a Yoga Teacher, mom of Kaia & Randy, and 35 house plants. </p>

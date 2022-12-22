@@ -8,7 +8,7 @@ const HomeHeroText = () => {
             <h1>Rachel Aronne</h1>
             <h2>Maine Yoga Teacher</h2>
             <div className={styles.linkContainer}>
-                <StyledLink scheme={'light'} href="/classes" innerText='Learn More' />
+                <StyledLink scheme={'light'} href="/about" innerText='Learn More' />
             </div>
         </div>
     );
