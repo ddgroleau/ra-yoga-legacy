@@ -15,7 +15,7 @@ const Privacy = () => {
                     display:"flex", flexDirection: "column", maxWidth: "90%", paddingBlock:"0 5rem", 
                     lineHeight: "1.5rem", wordBreak: "break-word"
                 }}>
-                    <h1>PRIVACY NOTICE</h1>
+                    <h1 style={{lineHeight: "3rem"}}>PRIVACY NOTICE</h1>
                     <em>Last updated December 20th, 2022</em>
                     <p>
                     This privacy notice for Rachel Aronne Yoga ("Company," "we," "us," or "our"), 

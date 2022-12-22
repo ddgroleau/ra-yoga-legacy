@@ -15,7 +15,7 @@ const Disclaimer = () => {
                 <div style={{
                     display:"flex", flexDirection: "column", maxWidth: "90%", paddingBlock:"0 5rem", lineHeight: "1.5rem", wordBreak: "break-word"
                 }}>
-                    <h1>Rachel Aronne Yoga Accessibility Statement</h1>
+                    <h1 style={{lineHeight: "3rem"}}>Rachel Aronne Yoga Accessibility Statement</h1>
                     <p><em>Last Updated: December 20th, 2022.</em></p>
                     <h2>General</h2>
                     <p>
