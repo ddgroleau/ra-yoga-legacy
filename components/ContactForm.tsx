@@ -10,7 +10,6 @@ const ContactForm = () => {
 
     const handleSubmit = () => {
         event?.preventDefault();
-        let body = '';
         let mailDaemon = 'email@email.com';
         if(nameRef.current && emailRef.current && messageRef.current) {
             let nameElement:HTMLInputElement = nameRef.current;
@@ -20,7 +19,7 @@ const ContactForm = () => {
             let msgTemplate = 
                 `Hi, my name is ${nameElement.value}, and my email is ${emailElement.value}.\r\r${msgElement.value}\r`;
 
-            body = encodeURIComponent(msgTemplate);
+            let body = encodeURIComponent(msgTemplate);
 
             const subject = encodeURIComponent("Reaching out from your Yoga Website");
             document.location =`mailto:${mailDaemon}?subject=${subject}&body=${body}`;
@@ -48,11 +47,11 @@ const ContactForm = () => {
                         <label htmlFor='message'>Message</label>
                         <textarea ref={messageRef} id="message" required/>
                     </div>
-                    <button className={styles.submitBtn} type="submit">Submit</button>
+                    <button className={styles.submitBtn} type="submit">Email Us</button>
                 </>
                 : 
                 <>
-                    <p>Thanks for submitting your message. We will reach out to you shortly.</p>
+                    <p>We will reach out to you shortly as soon as we recieve your email. Thanks for your interest!</p>
                     <button 
                         className={styles.submitBtn} 
                         type="button" 
