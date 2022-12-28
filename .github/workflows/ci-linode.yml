@@ -36,6 +36,9 @@ jobs:
       - name: Build and Push to DockerHub
         uses: docker/build-push-action@v3
         with:
+          build-args: |
+            NEXT_PUBLIC_AUTH0_DOMAIN=${{ secrets.NEXT_PUBLIC_AUTH0_DOMAIN }}
+            NEXT_PUBLIC_AUTH0_CLIENT_ID=${{ secrets.NEXT_PUBLIC_AUTH0_CLIENT_ID }}
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/ra-yoga:latest
 
@@ -47,21 +50,25 @@ jobs:
         uses: appleboy/ssh-action@master
         env:
           HOST_PORT: ${{ secrets.HOST_PORT }}
+          NEXT_PUBLIC_AUTH0_DOMAIN: ${{ secrets.NEXT_PUBLIC_AUTH0_DOMAIN }}
+          NEXT_PUBLIC_AUTH0_CLIENT_ID: ${{ secrets.NEXT_PUBLIC_AUTH0_CLIENT_ID }}
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER_NAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: ${{ secrets.PORT }}
+          port: ${{ secrets.PORT }} 
           passphrase: ${{ secrets.PASSPHRASE }}
-          envs: HOST_PORT
+          envs: HOST_PORT,NEXT_PUBLIC_AUTH0_DOMAIN,NEXT_PUBLIC_AUTH0_CLIENT_ID
           script: |
-            export envArray=( $HOST_PORT ) \
+            export envArray=( $HOST_PORT $NEXT_PUBLIC_AUTH0_DOMAIN $NEXT_PUBLIC_AUTH0_CLIENT_ID ) \
             && docker pull thoughtspring/ra-yoga \
             && if [[ -z $(docker container ls -a | grep "ra-yoga") ]]; \
             then echo "No container found. Starting ra-yoga container..."; \
             else docker stop ra-yoga && docker rm ra-yoga; \
             fi \
             && docker run -d -p "${envArray[0]}":3000 --name ra-yoga --restart always \
+            -e NEXT_PUBLIC_AUTH0_DOMAIN="${envArray[1]}" \
+            -e NEXT_PUBLIC_AUTH0_CLIENT_ID="${envArray[2}" \
             thoughtspring/ra-yoga \
             && exit \
             && exit 0;
