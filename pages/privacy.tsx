@@ -3,10 +3,15 @@ import React from 'react';
 import Layout from '../components/Layout';
 
 const Privacy = () => {
+    const seoDescription = `
+Join me every Monday at 4:30pm MST/ 6:30pm EST for All Levels Vinyasa, 
+or as it has come to be known as “Virtual Vinyasa” where we come together, 
+virtually, to move our bodies and connect with our selves in the comfort of our own home.
+`;
     return (
         <Layout 
             title="Privacy Policy | Rachel Aronne Yoga" 
-            description={``}
+            description={seoDescription}
         >
             <section style={{
                 display:"flex", justifyContent:"center", width: "100%"
