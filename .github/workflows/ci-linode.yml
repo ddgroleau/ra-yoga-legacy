@@ -68,7 +68,7 @@ jobs:
             fi \
             && docker run -d -p "${envArray[0]}":3000 --name ra-yoga --restart always \
             -e NEXT_PUBLIC_AUTH0_DOMAIN="${envArray[1]}" \
-            -e NEXT_PUBLIC_AUTH0_CLIENT_ID="${envArray[2}" \
+            -e NEXT_PUBLIC_AUTH0_CLIENT_ID="${envArray[2]}" \
             thoughtspring/ra-yoga \
             && exit \
             && exit 0;
