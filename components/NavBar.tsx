@@ -81,7 +81,7 @@ const Navbar = ({title,description}:NavbarProps) => {
                                 Sign Up
                             </Link>
                         </span>
-                        {!isAuthenticated ? <LoginButton /> : <LogoutButton/>}
+                        {/* {!isAuthenticated ? <LoginButton /> : <LogoutButton/>} */}
                     </section>
                     <div className={styles.navLogo}>
                         <Link href={"/"}>
