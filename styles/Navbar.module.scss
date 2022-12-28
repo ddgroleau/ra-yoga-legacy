@@ -1,4 +1,4 @@
-@import './colors.scss';
+@import './_variables.module.scss';
 
 .navContainer {
     position: relative;
@@ -97,19 +97,6 @@
     width: fit-content;
 }
 
-.signUp {
-    border: solid $accent-light 1px;
-    padding: $gap-xs $gap-s;
-    position: absolute;
-    border-radius: 6px;
-    margin-top: 190px;
-    &:hover {
-        background-color: $accent-light;
-        transition: .4s;
-        color: $primary;
-    }
-}
-
 @media (min-width: 768px) {
     .nav {
         flex-direction: row-reverse;
@@ -119,7 +106,7 @@
     }
     .navLinks { 
         display: flex;
-        margin-right: 10rem;
+        align-items: center;
     }
     .navLogo {
         margin-left:-2%;
@@ -138,9 +125,5 @@
         left: inherit;
         width: initial;
         z-index: inherit;
-    }
-    .signUp {
-        right: 3vw;
-        top: -9.6rem;
     }
 }

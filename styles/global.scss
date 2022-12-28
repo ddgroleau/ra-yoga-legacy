@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
-@import './colors.scss';
+@import './_variables.module.scss';
 
 * {
   box-sizing: border-box;
@@ -53,6 +53,7 @@ button {
   background: none;
   border: none;
   cursor: pointer;
+  font-family: 'Forum', cursive;
 }
 
 button:active, button:focus {
@@ -77,3 +78,19 @@ footer {
 p {
   margin-block: $gap-s;
 }
+
+.navBtn {
+  border: solid $accent-light 1px;
+  padding: $gap-xs $gap-s;
+  border-radius: 6px;
+  width: fit-content;
+  text-align: center;
+  color: $accent-light;
+}
+
+.navBtn:hover {
+  background-color: $accent-light;
+  transition: .4s;
+  color: $primary;
+}
+

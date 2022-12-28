@@ -5,6 +5,9 @@ import styles from '../styles/Navbar.module.scss';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Script from 'next/script';
+import LoginButton from './LoginButton';
+import { useAuth0 } from '@auth0/auth0-react';
+import LogoutButton from './LogoutButton';
 
 type NavbarProps = {
     title:string;
@@ -13,6 +16,7 @@ type NavbarProps = {
 
 const Navbar = ({title,description}:NavbarProps) => {
     const [isToggled,setIsToggled] = useState<boolean|null>(false);
+    const { isAuthenticated } = useAuth0();
     const hasBeenToggled = useRef(false);
     const router = useRouter();
 
@@ -69,7 +73,7 @@ const Navbar = ({title,description}:NavbarProps) => {
                         <span className={router.pathname === "/contact" ? styles.active : ""}>
                             <Link href={"/contact"} >Contact</Link>
                         </span>
-                        <span className={styles.signUp}>
+                        <span className="navBtn">
                             <Link 
                                 href='https://www.tickettailor.com/events/rachelaronneyoga/768704#' 
                                 target={"_blank"}
@@ -77,6 +81,7 @@ const Navbar = ({title,description}:NavbarProps) => {
                                 Sign Up
                             </Link>
                         </span>
+                        {!isAuthenticated ? <LoginButton /> : <LogoutButton/>}
                     </section>
                     <div className={styles.navLogo}>
                         <Link href={"/"}>
