@@ -65,8 +65,7 @@ const Disclaimer = () => {
                     </p>
                     <h2>Contact Us</h2>
                     <p>Have questions, need assistance, or want to report an accessibility issue? Please contact Rachel Aronne Yoga Customer Support:</p>
-                    <p>Email: <Link href="mailto:email@email.com">email@email.com</Link></p>
-                    <p>Phone: <Link href="tel:5555555555">+1 (555) 555 - 5555</Link></p>
+                    <p>Email: <Link href="mailto:rachelaronneyoga@gmail.com">rachelaronneyoga@gmail.com</Link></p>
                 </div>
             </section>
         </Layout>

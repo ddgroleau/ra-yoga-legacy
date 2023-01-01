@@ -10,7 +10,7 @@ const ContactForm = () => {
 
     const handleSubmit = () => {
         event?.preventDefault();
-        let mailDaemon = 'email@email.com';
+        let mailDaemon = 'rachelaronneyoga@gmail.com';
         if(nameRef.current && emailRef.current && messageRef.current) {
             let nameElement:HTMLInputElement = nameRef.current;
             let emailElement:HTMLInputElement = emailRef.current;

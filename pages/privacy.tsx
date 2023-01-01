@@ -29,7 +29,7 @@ virtually, to move our bodies and connect with our selves in the comfort of our 
                     Questions or concerns? Reading this privacy notice will help you understand 
                     your privacy rights and choices. If you do not agree with our policies and practices,
                      please do not use our Services. If you still have any questions or concerns, 
-                     please contact us at email@email.com.
+                     please contact us at rachelaronneyoga@gmail.com.
                     </p>
                     <h2>
                     SUMMARY OF KEY POINTS
@@ -268,7 +268,7 @@ virtually, to move our bodies and connect with our selves in the comfort of our 
                     use of the Services. If we learn that personal information from users less than 18 years of age 
                     has been collected, we will deactivate the account and take reasonable measures to promptly 
                     delete such data from our records. If you become aware of any data we may have collected from 
-                    children under age 18, please contact us at email@email.com.
+                    children under age 18, please contact us at rachelaronneyoga@gmail.com.
                     </p>
                     <h3>9. WHAT ARE YOUR PRIVACY RIGHTS?</h3>
                     <p>
@@ -372,7 +372,7 @@ virtually, to move our bodies and connect with our selves in the comfort of our 
                     <h3>13. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</h3>
                     <p>
                     If you have questions or comments about this notice, 
-                    you may email us at email@email.com.
+                    you may email us at rachelaronneyoga@gmail.com.
                     </p>
                     <h3>14. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</h3>
                     <p>

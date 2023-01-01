@@ -173,7 +173,7 @@ virtually, to move our bodies and connect with our selves in the comfort of our 
                     <h3>Where can I get further information?</h3>
                     <p>
                         If you have any questions about our use of cookies or other technologies, 
-                        please email us at email@email.com.
+                        please email us at rachelaronneyoga@gmail.com.
                     </p>
                 </div>
             </section>

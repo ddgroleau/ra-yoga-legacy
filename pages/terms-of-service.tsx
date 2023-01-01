@@ -163,8 +163,7 @@ virtually, to move our bodies and connect with our selves in the comfort of our 
                     {/* <p><strong>ADDRESS</strong></p> */}
                     <p><strong>Portland, ME 04102</strong></p>
                     <p><strong>United States</strong></p>
-                    <p><strong>Phone: +1 (555) 555 - 5555</strong></p>
-                    <p><strong>email@email.com</strong></p>
+                    <p><strong>rachelaronneyoga@gmail.com</strong></p>
                 </div>
             </section>
         </Layout>

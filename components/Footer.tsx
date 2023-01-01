@@ -51,7 +51,7 @@ const Footer = () => {
                                 <Image src="/twitter-icon.svg" 
                                     width={ICON_DIMENSION} height={ICON_DIMENSION} alt="Twitter Feed" />
                             </Link>
-                            <Link href="mailto:email@email.com" passHref>
+                            <Link href="mailto:rachelaronneyoga@gmail.com" passHref>
                                 <Image src="/email-icon.svg" 
                                     width={ICON_DIMENSION} height={ICON_DIMENSION} alt="Email" />
                             </Link>
