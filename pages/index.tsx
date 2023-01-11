@@ -4,6 +4,7 @@ import Hero from '@/components/Hero';
 import HomeHeroText from '@/components/HomeHeroText';
 import HomeImage from '@/components/HomeImage';
 import ClassesPromo from '@/components/ClassesPromo';
+import EventBanner from '@/components/EventBanner';
 
 const seoDescription = `
 Join me every Monday at 4:30pm MST/ 6:30pm EST for All Levels Vinyasa, 
@@ -14,6 +15,7 @@ virtually, to move our bodies and connect with our selves in the comfort of our 
 const Home = () => {
     return (
         <Layout title={'Rachel Aronne Yoga'} description={seoDescription}>
+            {new Date() <= new Date(2023,0,31) && <EventBanner/>}
             <section className={styles.heroContainer}>
                 <Hero textComponent={<HomeHeroText/>} imgComponent={<HomeImage/>}/>
             </section>
