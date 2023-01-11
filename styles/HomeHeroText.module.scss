@@ -1,7 +1,6 @@
 @import './_variables.module.scss';
 
 .container {
-    width: 100%;
     h1, h2 {
         margin-block: $gap-m;
         text-align: center;
@@ -9,15 +8,14 @@
     h2 {
         font-weight: 400;
     }
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    position: absolute;
-    bottom: calc(45vh + 5vw);
     padding: $gap-xl 0;
     background: linear-gradient(180deg, 
     $transparent-light-s,
-    $transparent-light-l 20% 80%,
+    $transparent-light-l 30% 50%,
     $transparent-light-m,
     $transparent-light-s);
 }
@@ -27,15 +25,4 @@
     width: 100%;
     display: flex;
     justify-content: center;
-}
-
-@media (min-width: 768px) {
-    .container {
-        display: flex;
-        position: initial;
-        background: initial;
-        margin-top: $gap-xl;
-        max-width: 320px;
-        margin-left: $gap-m;
-    }
 }

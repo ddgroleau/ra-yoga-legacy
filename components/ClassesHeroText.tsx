@@ -12,7 +12,7 @@ const ClassesHeroText = () => {
             </ul>
             <div className={styles.linkContainer}>
                 <StyledLink 
-                    scheme={'light'} 
+                    scheme={'dark'} 
                     href="https://www.tickettailor.com/events/rachelaronneyoga/768704#" 
                     innerText='Sign Up' 
                     target={"_blank"}

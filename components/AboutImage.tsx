@@ -6,10 +6,11 @@ const AboutImage = () => {
             backgroundImage:"url('/rachel-mudra-front.webp')",
             backgroundPosition:"top center",
             backgroundRepeat:"no-repeat",
-            backgroundSize:"cover",
+            backgroundSize:"contain",
             width:"100%",
             height: "70vh",
-            maxHeight: "600px"
+            maxHeight: "600px",
+            borderRadius: "6px"
         }}></div>
     );
 };

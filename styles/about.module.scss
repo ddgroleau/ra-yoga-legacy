@@ -1,13 +1,12 @@
 @import './styles/_variables.module.scss';
 
 .heroContainer {
-  width: 100%;
+  width: 95%;
   height: 100%;
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
-  & > section > div:nth-child(1) {
-    margin-block: $gap-m;
-  }
+  margin-top: $gap-xl;
 }
 
 .promoContainer {
@@ -17,12 +16,24 @@
   height: 100%;
 }
 
+.text {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-block: $gap-m;
+}
+
 @media (min-width: 768px) {
   .heroContainer {
-    margin-top: $gap-m;
-    max-width: 95%;
-    & > section > div:nth-child(1) {
-      margin-block: 0;
-    }
+    flex-flow: row nowrap;
   }
+  
 }

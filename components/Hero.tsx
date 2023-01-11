@@ -7,12 +7,9 @@ const Hero = ({textComponent,imgComponent}:{textComponent:any,imgComponent:any})
             <div className={styles.textContent}>
                 {textComponent}
             </div>
-            <div className={styles.imgContent}>
-                <div className={styles.imgContainer}>
-                    {imgComponent}
-                </div>
+            <div className={styles.imgContainer}>
+                {imgComponent}
             </div>
-            <div></div>
         </section>
     );
 };

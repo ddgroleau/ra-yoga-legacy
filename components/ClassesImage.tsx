@@ -8,8 +8,8 @@ const ClassesImage = () => {
             backgroundRepeat:"no-repeat",
             backgroundSize:"cover",
             width:"100%",
-            height: "50vh",
-            maxHeight: "400px"
+            height: "60vh",
+            maxHeight: "500px"
         }}></div>
     );
 };

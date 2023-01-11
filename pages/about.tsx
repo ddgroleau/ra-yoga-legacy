@@ -16,7 +16,12 @@ const About = () => {
     return (
         <Layout title={'Rachel Aronne Yoga'} description={seoDescription}>
             <div className={styles.heroContainer}>
-                <Hero textComponent={<AboutHeroText/>} imgComponent={<AboutImage/>}/>
+                <div className={styles.text}>
+                    <AboutHeroText/>
+                </div>
+                <div className={styles.image}>
+                    <AboutImage/>
+                </div>
             </div>
             <section className={styles.promoContainer}>
                 <ClassesPromo />

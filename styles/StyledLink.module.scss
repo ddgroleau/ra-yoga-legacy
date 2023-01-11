@@ -1,14 +1,20 @@
 @import './_variables.module.scss';
 
 
-@mixin container($borderColor,$textColor) {
+@mixin container($borderColor,$textColor, $bgColor) {
     border: solid $borderColor 2px;
     max-width: fit-content;
     max-height: min-content;
-    padding: $gap-s $gap-m;
     color: $textColor;
-    cursor: pointer;
     border-radius: 6px;
+    background-color: $bgColor;
+    a {
+        height: 100%;
+        width: 100%;
+        display: block;
+        padding: $gap-s $gap-m;
+        cursor: pointer;
+    }
 }
 
 @mixin containerHover($bgColor,$textColor) {
@@ -18,7 +24,7 @@
 }
 
 .light {
-    @include container($primary, $text-dark);
+    @include container($primary, $text-dark, $transparent-light-m);
 }
 
 .light:hover {
@@ -26,7 +32,7 @@
 }
 
 .dark {
-    @include container($accent-light, $text-light);
+    @include container($accent-light, $text-light, $transparent-tertiary-lg);
 }
 
 .dark:hover {

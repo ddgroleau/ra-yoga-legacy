@@ -7,36 +7,23 @@
     color: $text-dark;
     height: 100%;
     width: 100%;
-}
-
-.imgContent {
-    height: 100%;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
 }
 
 .imgContainer {
-    display: flex;
-    justify-content: center;
-    align-items: flex;
+    grid-column: 1/1;
+    grid-row: 1/1;
     width: 100%;
+    min-width: 100%;
 }
 
 .textContent {
-    width: 100%;
+    grid-column: 1/1;
+    grid-row: 1/1;
+    position: relative;
+    z-index: 2;
     display: flex;
     justify-content: center;
-}
-
-@media (min-width: 768px) {
-    .container {
-        flex-direction: row;
-        justify-content: center;
-        padding: $gap-l;
-        gap: $gap-xl;
-    }
-    .imgContainer {
-        div {
-            border-radius: 20px;
-        }
-    }
 }
