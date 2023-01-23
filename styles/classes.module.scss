@@ -5,7 +5,6 @@
   height: 100%;
   display: flex;
   justify-content: center;
-  margin-top: $gap-xl;
 }
 
 .promoContainer {
@@ -13,4 +12,13 @@
   justify-content: center;
   width: 100%;
   height: 100%;
+}
+
+@media (min-width: 768px) {
+  .heroContainer {
+    margin-top: $gap-m;
+    div[datatype="image"] {
+      border-radius: 10px;
+    }
+  }
 }

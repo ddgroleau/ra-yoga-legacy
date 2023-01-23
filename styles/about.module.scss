@@ -35,5 +35,9 @@
   .heroContainer {
     flex-flow: row nowrap;
   }
-  
+  .image {
+    div[datatype="image"] {
+      border-radius: 10px;
+    }
+  }
 }
