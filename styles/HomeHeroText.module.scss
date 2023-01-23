@@ -26,3 +26,9 @@
     display: flex;
     justify-content: center;
 }
+
+@media (min-width: 768px) {
+    .container {
+        background: none;
+    }
+}
