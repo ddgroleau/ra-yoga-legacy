@@ -38,6 +38,7 @@
   .image {
     div[datatype="image"] {
       border-radius: 10px;
+      filter: drop-shadow(4px 4px 6px $transparent-primary);
     }
   }
 }

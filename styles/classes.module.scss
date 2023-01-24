@@ -19,6 +19,8 @@
     margin-top: $gap-m;
     div[datatype="image"] {
       border-radius: 10px;
+      box-shadow: 4px 4px 10px 2px $transparent-primary;
+      filter: brightness(1.2)
     }
   }
 }

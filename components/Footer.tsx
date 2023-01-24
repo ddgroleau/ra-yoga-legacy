@@ -4,7 +4,7 @@ import React from 'react';
 import styles from '../styles/Footer.module.scss';
 
 const Footer = () => {
-    const ICON_DIMENSION=30;
+    const ICON_DIMENSION=50;
     return (
         <footer className={styles.container}>
             <section className={styles.topContainer}>
@@ -29,28 +29,28 @@ const Footer = () => {
                     </nav>
                     <section className={styles.social}>
                         <div className={styles.socialRow}>
-                            <Link href="https://www.facebook.com" passHref>
+                            {/* <Link href="https://www.facebook.com" passHref>
                                 <Image src="/facebook-icon.svg" 
                                     width={ICON_DIMENSION} height={ICON_DIMENSION} alt="Facebook" />
-                            </Link>
-                            <Link href="https://www.instagram.com" passHref>
+                            </Link> */}
+                            <Link target="_blank" href="https://www.instagram.com/racharonne/?hl=en" passHref>
                                 <Image src="/instagram-icon.svg" 
                                     width={ICON_DIMENSION} height={ICON_DIMENSION} alt="Instagram" />
                             </Link>
-                            <Link href="https://youtube.com" passHref>
+                            {/* <Link href="https://youtube.com" passHref>
                                 <Image src="/youtube-icon.svg" 
                                     width={ICON_DIMENSION} height={ICON_DIMENSION} alt="Youtube" />
-                            </Link>
+                            </Link> */}
                         </div>
                         <div className={styles.socialRow}>
-                            <Link href="https://www.linkedin.com" passHref>
+                            {/* <Link href="https://www.linkedin.com" passHref>
                                 <Image src="/linkedin-icon.svg" 
                                     width={ICON_DIMENSION} height={ICON_DIMENSION} alt="LinkedIn" />
                             </Link>
                             <Link href="https://twitter.com" passHref>
                                 <Image src="/twitter-icon.svg" 
                                     width={ICON_DIMENSION} height={ICON_DIMENSION} alt="Twitter Feed" />
-                            </Link>
+                            </Link> */}
                             <Link href="mailto:rachelaronneyoga@gmail.com" passHref>
                                 <Image src="/email-icon.svg" 
                                     width={ICON_DIMENSION} height={ICON_DIMENSION} alt="Email" />

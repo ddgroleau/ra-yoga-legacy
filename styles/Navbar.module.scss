@@ -100,6 +100,7 @@
 @media (min-width: 768px) {
     .nav {
         flex-direction: row-reverse;
+        padding-block: $gap-s;
     }
     .mobileMenu { 
         display: none;
@@ -107,9 +108,13 @@
     .navLinks { 
         display: flex;
         align-items: center;
+        a {
+            font-size: $font-xl;
+        }
     }
     .navLogo {
-        margin-left:-2%;
+        margin-left:-1%;
+        transform: scale(1.4);
     }
     .navLinksOpen {
         display: none;

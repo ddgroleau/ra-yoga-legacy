@@ -1,7 +1,7 @@
 $primary: #593f3f;
 $secondary: #836B6B;
 $tertiary: #A69090;
-$special: #a19132;
+$special: #2E2F2F;
 $text-dark: #372E29;
 $text-light: #FFFFFF;
 $accent-light: #FFFFFF;
@@ -29,6 +29,19 @@ $gap-m: 1rem;
 $gap-l: 1.5rem;
 $gap-xl: 2rem;
 $gap-xxl: 3rem;
+
+@keyframes fadeIn {
+    0% {
+      opacity: .4;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@mixin fadeIn {
+    animation: fadeIn .5s cubic-bezier(0.19, 1, 0.22, 1);
+}
 
 :export {
     primary:$primary;

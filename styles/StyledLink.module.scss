@@ -38,3 +38,11 @@
 .dark:hover {
     @include containerHover($accent-light, $text-dark);
 }
+
+@media (min-width: 768px) {
+    .light, .dark {
+        a {
+            padding: $gap-s $gap-m;
+        }
+    }
+}

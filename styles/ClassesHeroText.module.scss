@@ -25,3 +25,9 @@
     margin-block: $gap-m $gap-xl;
     justify-content: center;
 }
+
+@media (min-width: 768px) {
+    .container {
+        background: linear-gradient(180deg, $transparent-light-m, $transparent-primary 40% 60%, $transparent-light-m);
+    }
+}

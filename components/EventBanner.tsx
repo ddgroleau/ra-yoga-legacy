@@ -7,11 +7,12 @@ const EventBanner = () => {
 
     return (
         <div style={{
-            background: variables.tertiary,
+            background: variables.transparentTertiary,
             width: "100vw",
             textAlign: "center",
             paddingBlock: variables.gapMed,
-            color: variables.textLight,
+            color: variables.textDark,
+            fontWeight: 800,
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -27,7 +28,7 @@ const EventBanner = () => {
             <StyledLink
                 href="https://rootedheartyw.com/events/" 
                 innerText="Sign up here" 
-                scheme="dark" 
+                scheme="light" 
                 target="_blank"
             />
         </div>

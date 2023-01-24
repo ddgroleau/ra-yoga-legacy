@@ -8,7 +8,7 @@ const ClassesHeroText = () => {
             <h1>Class Schedule</h1>
             <h2>All Levels Vinyasa: Virtual Vinyasa</h2>
             <ul>
-                <li>Every Monday at 4:30MT/ 6:30ET</li>
+                <li>Every Monday at 4:30MT/6:30ET</li>
             </ul>
             <div className={styles.linkContainer}>
                 <StyledLink 
