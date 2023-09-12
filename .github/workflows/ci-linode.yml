@@ -61,7 +61,7 @@ jobs:
           envs: HOST_PORT,NEXT_PUBLIC_AUTH0_DOMAIN,NEXT_PUBLIC_AUTH0_CLIENT_ID
           script: |
             export envArray=( $HOST_PORT $NEXT_PUBLIC_AUTH0_DOMAIN $NEXT_PUBLIC_AUTH0_CLIENT_ID ) \
-            && docker pull thoughtspring/ra-yoga \
+            && docker pull dangroleau/ra-yoga \
             && if [[ -z $(docker container ls -a | grep "ra-yoga") ]]; \
             then echo "No container found. Starting ra-yoga container..."; \
             else docker stop ra-yoga && docker rm ra-yoga; \
@@ -69,6 +69,6 @@ jobs:
             && docker run -d -p "${envArray[0]}":3000 --name ra-yoga --restart always \
             -e NEXT_PUBLIC_AUTH0_DOMAIN="${envArray[1]}" \
             -e NEXT_PUBLIC_AUTH0_CLIENT_ID="${envArray[2]}" \
-            thoughtspring/ra-yoga \
+            dangroleau/ra-yoga \
             && exit \
             && exit 0;
